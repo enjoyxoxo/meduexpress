@@ -18,6 +18,7 @@ import Resetpassword from './pages/Resetpassword';
 import Signup from './pages/Signup';
 import SingleBlog from './pages/SingleBlog';
 import Wishlist from './pages/Wishlist';
+import SingleProduct from './pages/SingleProduct';
 
 function App() {
   return <>
@@ -27,7 +28,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="store" element={<OurStore />} />
+          <Route path="product" element={<OurStore />} />
+          <Route path="product/:id" element={<SingleProduct />} />
           <Route path="blogs" element={<Blog />} />
           <Route path="blog/:id" element={<SingleBlog />} />
           <Route path="compare-product" element={<CompareProduct />} />
