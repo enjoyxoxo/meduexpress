@@ -662,3 +662,9 @@ footer .input-group-text {
 }
 
 /* End Auth Page*/
+
+/* Policy Pages */
+.policy {
+  background-color: white;
+  padding: 30px;
+}
