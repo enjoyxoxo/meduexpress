@@ -16,20 +16,21 @@ const Checkout = () => {
               <nav style={{"--bs-breadcrumb-divider": ">"}} aria-label="breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                   <Link className='text-dark' to='/cart'>
+                   <Link className='text-dark total-price' to='/cart'>
                      Cart
                    </Link>
                   </li> 
-                  &nbsp; /
-                  <li className="breadcrumb-item active" aria-current="page">           Information
+                  &nbsp; / 
+                  <li className="breadcrumb-item total-price active" aria-current="page">Information
                   </li>
-                  &nbsp; /<li className="breadcrumb-item active">Shipping</li>
+                  &nbsp; /<li className="breadcrumb-item total-price active">Shipping</li>
                   &nbsp; /
                   <li className="breadcrumb-item active" aria-current="page">Payment</li>
                 </ol>
               </nav>
-              <h4 className="title">Contact Information</h4>
-              <p className="details">Asante Hammond (palito0277@gmail.com)</p>
+              <h4 className="title total">Contact Information</h4>
+              <p className="user-details total">Asante Hammond (palito0277@gmail.com)</p>
+              <h4 className='mb-3'>Shipping Address</h4>
               <form action="" className='d-flex flex-wrap gap-15 justify-content-between'>
                 <div className='w-100'>
                   <select name="" className="form-control form-select" id="">
@@ -81,28 +82,28 @@ const Checkout = () => {
                     <img className="img-fluid" src={watch} alt="product" />
                   </div>
                   <div>
-                    <h5 className="title">ghKk</h5>
-                    <p>s / #gfdjs</p>
+                    <h5 className="total-price">ghKk</h5>
+                    <p className='total-price'>s / #gfdjs</p>
                 </div>
                 </div>
                 <div className='flex-grow-1'>
-                  <h5>$ 100</h5>
+                  <h5 className='total'>$ 100</h5>
                 </div>
               </div>
             </div>
             <div className='border-bottom py-4'>
               <div className='d-flex justify-content-between align-items-center'>
-                <p>SubTotal</p>
-                <p>$ 1000</p>
+                <p className='total'>SubTotal</p>
+                <p className='total-price'>$ 1000</p>
               </div>
               <div className='d-flex justify-content-between align-items-center'>
-                <p className='mb-0'>Shipping</p>
-                <p className='mb-0'>$ 1000</p>
+                <p className='mb-0 total'>Shipping</p>
+                <p className='mb-0 total-price'>$ 1000</p>
               </div>
             </div>
             <div className='d-flex justify-content-between align-items-center border-bottom py-4'>
-              <h4>Total</h4>
-              <h5>$ 1000</h5>
+              <h4 className='total'>Total</h4>
+              <h5 className='total-price'>$ 1000</h5>
             </div>
           </div>
         </div>
